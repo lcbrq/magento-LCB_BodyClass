@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <LCB_BodyClass>
+            <version>0.1.0</version>
+        </LCB_BodyClass>
+    </modules>
+    <global>
+        <helpers>
+            <bodyclass>
+                <class>LCB_BodyClass_Helper</class>
+            </bodyclass>
+        </helpers>
+        <blocks>
+            <bodyclass>
+                <class>LCB_BodyClass_Block</class>
+            </bodyclass>
+            <page>
+                <rewrite>
+                    <html>LCB_BodyClass_Block_Page_Html</html>
+                </rewrite>
+            </page>
+        </blocks>
+    </global>
+</config> 
