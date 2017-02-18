@@ -2,7 +2,7 @@
 <config>
     <modules>
         <LCB_BodyClass>
-            <version>0.1.0</version>
+            <version>1.0.0</version>
         </LCB_BodyClass>
     </modules>
     <global>
@@ -11,15 +11,22 @@
                 <class>LCB_BodyClass_Helper</class>
             </bodyclass>
         </helpers>
-        <blocks>
+        <models>
             <bodyclass>
-                <class>LCB_BodyClass_Block</class>
+                <class>LCB_BodyClass_Model</class>
             </bodyclass>
-            <page>
-                <rewrite>
-                    <html>LCB_BodyClass_Block_Page_Html</html>
-                </rewrite>
-            </page>
-        </blocks>
+        </models>
     </global>
+    <frontend>
+        <events>
+            <controller_action_layout_generate_blocks_after>
+                <observers>
+                    <add_lcb_bodyclass>
+                        <class>bodyclass/observer</class>
+                        <method>addBodyClass</method>
+                    </add_lcb_bodyclass>
+                </observers>
+            </controller_action_layout_generate_blocks_after>
+        </events>
+    </frontend>
 </config> 

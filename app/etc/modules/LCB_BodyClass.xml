@@ -4,7 +4,6 @@
         <LCB_BodyClass>
             <active>true</active>
             <codePool>local</codePool>
-            <version>0.1.0</version>
         </LCB_BodyClass>
     </modules>
 </config>
