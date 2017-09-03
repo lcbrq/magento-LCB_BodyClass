@@ -24,7 +24,7 @@ class LCB_BodyClass_Model_Observer {
 
             $page = $layout->getBlock('root');
 
-            if ($page) {
+            if ($page && method_exists($page, 'addBodyClass')) {
 
                 $append = array();
 
